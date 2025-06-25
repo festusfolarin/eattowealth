@@ -1,0 +1,23 @@
+Usable layouts/components
+
+tailbits 
+Content
+Blog
+Contact
+Logo Cloud
+Signup
+Signin
+Steps
+Stats
+FAQ
+Team
+Footer
+Testimonials
+Features
+Hero
+Call To Action
+
+
+Meeting:
+Inconsistent green colors and faq font sizes
+Design inconsistensies despite matching

@@ -1,0 +1,133 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { FiMenu, FiX } from "react-icons/fi";
+
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <>
+      <header className="sticky top-0 z-50">
+        <nav className=" bg-white px-4 lg:px-6 py-4">
+          <div className="flex justify-between items-center mx-auto max-w-screen-xl">
+            <Link className="flex gap-2 items-center py-2" href={"/"}>
+              <img src="/logo.png" alt="logo" className="w-7" />
+              <h2 className="text-base font">EatToWealth</h2>
+            </Link>
+
+            <div
+              className="md:hidden text-2xl cursor-pointer"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <FiX /> : <FiMenu />}
+            </div>
+
+            <ul className=" hidden md:flex items-center tracking-wide text-sm gap-[39px] font text-green-600">
+              <li>
+                <Link className="hover:text-amber-600" href={"/"}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-amber-600" href={"/about"}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-amber-600" href={"#services"}>
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-amber-600" href={"/blog"}>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-amber-600" href={"/community"}>
+                  Community
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-amber-600" href={"/pricing"}>
+                  Pricing
+                </Link>
+              </li>
+              <li className="flex gap-4 items-center">
+                <button className="border-2 text-green-600 border-green-600 px-6 py-2 rounded-[5px] hover:bg-amber-600 hover:text-white hover:border-amber-600">
+                  SignUp
+                </button>
+                <button className="border-2 border-amber-600 bg-amber-600 text-white rounded-[5px] px-6 py-2 hover:bg-green-600 hover:border-green-600">
+                  LogIn
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      {/* MOBILE MENU */}
+
+      <div
+        className={`fixed top-16 z-30 left-0 w-full bg-white shadow-md md:hidden px-6 py-4 transform transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-y-0" : "-translate-y-200"
+        }`}
+      >
+        <ul className="flex flex-col gap-4 text-green-600 tracking-wide">
+          <li>
+            <Link href="/" onClick={() => setMenuOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" onClick={() => setMenuOpen(false)}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link href="/services" onClick={() => setMenuOpen(false)}>
+              Service
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog" onClick={() => setMenuOpen(false)}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link href="/community" onClick={() => setMenuOpen(false)}>
+              Community
+            </Link>
+          </li>
+          <li>
+            <Link href="/pricing" onClick={() => setMenuOpen(false)}>
+              Pricing
+            </Link>
+          </li>
+          <li className="flex flex-col gap-3 mt-2">
+            <button className="border-2 text-green-600 border-green-600 px-4 py-2 rounded hover:bg-amber-600 hover:text-white hover:border-amber-600">
+              SignUp
+            </button>
+            <button className="border-2 border-amber-600 bg-amber-600 text-white px-4 py-2 rounded hover:bg-green-600">
+              LogIn
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      {/* Overlay to close menu when clicking outside */}
+
+      {menuOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-25 z-20 md:hidden"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+
+      {/* END MOBILE MENU */}
+    </>
+  );
+}
+
+export default Navbar;
