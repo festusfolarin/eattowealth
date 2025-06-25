@@ -1,47 +1,47 @@
-backend/node_modules
-frontend/node_modules
+BACKEND/node_modules
+FRONTEND/node_modules
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-frontend/.pnp
-frontend/.pnp.*
-frontend/.yarn/*
-!frontend/.yarn/patches
-!frontend/.yarn/plugins
-!frontend/.yarn/releases
-!frontend/.yarn/versions
+FRONTEND/.pnp
+FRONTEND/.pnp.*
+FRONTEND/.yarn/*
+!FRONTEND/.yarn/patches
+!FRONTEND/.yarn/plugins
+!FRONTEND/.yarn/releases
+!FRONTEND/.yarn/versions
 
 # testing
-frontend/coverage
+FRONTEND/coverage
 
 # next.js
-frontend/.next/
-frontend/out/
+FRONTEND/.next/
+FRONTEND/out/
 
 # production
-frontend/build
-backend/build
+FRONTEND/build
+BACKEND/build
 
 # misc
-frontend/.DS_Store
-frontend/*.pem
+FRONTEND/.DS_Store
+FRONTEND/*.pem
 
 # debug
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-frontend/.pnpm-debug.log*
+FRONTEND/npm-debug.log*
+FRONTEND/yarn-debug.log*
+FRONTEND/yarn-error.log*
+FRONTEND/.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-frontend/.env*
-backend/.env*
+FRONTEND/.env*
+BACKEND/.env*
 
 # vercel
-frontend/.vercel
+FRONTEND/.vercel
 
 # typescript
-frontend/*.tsbuildinfo
-frontend/next-env.d.ts
+FRONTEND/*.tsbuildinfo
+FRONTEND/next-env.d.ts
 
 

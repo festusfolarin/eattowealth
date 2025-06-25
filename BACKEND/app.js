@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Welcome to the backend",
+    message: "Welcome to the BACKEND",
     status: "success",
   });
 });
