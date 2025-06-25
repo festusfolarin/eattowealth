@@ -5,7 +5,7 @@ import { useState } from "react";
 function Faq() {
   const [openIndex, setOpenIndex] = useState(0); // First item open by default
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
