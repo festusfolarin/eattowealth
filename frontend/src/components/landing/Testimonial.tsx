@@ -81,8 +81,8 @@ function Testimonial() {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-md text-gray-800">
-                    EatToWealth transformed my eating habits effortlessly! I've
-                    been healthier, stronger, and more energized. Highly
+                    EatToWealth transformed my eating habits effortlessly! I
+                    have been healthier, stronger, and more energized. Highly
                     recommend!
                   </p>
                 </blockquote>
@@ -181,8 +181,8 @@ function Testimonial() {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-md text-gray-800">
-                    EatToWealth transformed my eating habits effortlessly! I've
-                    been healthier, stronger, and more energized. Highly
+                    EatToWealth transformed my eating habits effortlessly! I
+                    hasve been healthier, stronger, and more energized. Highly
                     recommend!
                   </p>
                 </blockquote>
@@ -281,8 +281,8 @@ function Testimonial() {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-md text-gray-800">
-                    EatToWealth transformed my eating habits effortlessly! I've
-                    been healthier, stronger, and more energized. Highly
+                    EatToWealth transformed my eating habits effortlessly! I
+                    have been healthier, stronger, and more energized. Highly
                     recommend!
                   </p>
                 </blockquote>

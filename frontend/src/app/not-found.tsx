@@ -3,7 +3,7 @@ import Link from "next/link";
 function NotFound() {
   return (
     <section className="bg-white ">
-      <div className="py-34 px-4 mx-auto max-w-screen-xl lg:py-36 lg:px-6">
+      <div className="py-34 px-4 mx-auto max-w-screen-xl lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
           <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#0D9344]">
             404
@@ -12,8 +12,8 @@ function NotFound() {
             Page not found.
           </p>
           <p className="mb-4 text-lg font-light text-gray-500 ">
-            Sorry, we can't find that page. <br />
-            You'll find lots to explore on the home page.
+            Sorry, we cannot find that page. <br />
+            You will find lots to explore on the home page.
           </p>
           <Link
             href={"/"}
