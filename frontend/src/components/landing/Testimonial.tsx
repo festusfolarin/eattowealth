@@ -3,7 +3,7 @@ function Testimonial() {
     <section className="py-10 bg-[#B4DEC5] sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <h2 className="text-3xl text-black font-medium text-center leading-tight sm:text-[32px]">
-          What Our Happy Client Says
+          What Our Happy Clients Say
         </h2>
         <p className="text-center mt-4 text-lg leading-relaxed mb-15">
           Hear from people who’ve transformed their health with us.
