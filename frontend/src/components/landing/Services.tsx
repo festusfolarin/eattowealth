@@ -50,9 +50,9 @@ const Services = () => {
           <p className="max-w-5xl text-center mx-auto mt-4 mb-10 text-base leading-relaxed text-gray-600">
             At Eattowealth, we provide a holistic approach to nutrition through
             a variety of services designed to meet your individual needs.
-            Whether you're looking for personalized meal plans, expert coaching,
-            or educational workshops, our team is dedicated to supporting you on
-            your wellness journey.
+            Whether you are looking for personalized meal plans, expert
+            coaching, or educational workshops, our team is dedicated to
+            supporting you on your wellness journey.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
