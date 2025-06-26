@@ -1,18 +1,68 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 function Ebook() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+        rootMargin: "0px 0px -50px 0px", // Start animation 50px before element comes into view
+      }
+    );
+
+    const currentSection = sectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
+    }
+
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection);
+      }
+    };
+  }, []);
+
   return (
-    <section className="bg-gradient-to-b bg-[#F6FAFA] px-4 lg:px-6 py-22">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-b bg-[#F6FAFA] px-4 lg:px-6 py-22 overflow-x-hidden"
+    >
       <div className=" mx-auto max-w-screen-xl">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
+          {/* Image section - slides in from left */}
+          <div
+            className={`transition-all duration-800 ease-out ${
+              isVisible
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-full opacity-0"
+            }`}
+          >
             <img
               className="w-[568px] h-[518px] object-cover rounded-3xl"
               src="/images/homepage/ebook2.png"
               alt=""
             />
           </div>
-          <div>
+
+          {/* Content section - slides in from right */}
+          <div
+            className={`transition-all duration-800 ease-out ${
+              isVisible
+                ? "translate-x-0 opacity-100"
+                : "translate-x-full opacity-0"
+            }`}
+          >
             <h2 className="text-4xl font-medium text-[#0F993E] md:text-4xl leading-tight">
               Download Our eBook
             </h2>
@@ -33,21 +83,6 @@ function Ebook() {
             </div>
             <div className="flex flex-col mt-8 bg-white border border-gray-200 rounded-md">
               <div className="flex flex-col justify-between flex-1 p-8">
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="silver"
-                  stroke="#ffffff"
-                  strokeWidth="0.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="-m-1 mb-4"
-                >
-                  <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
-                  <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
-                </svg> */}
                 <div className="-m-1 mb-4 flex">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

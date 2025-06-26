@@ -5,10 +5,10 @@ function NotFound() {
     <section className="bg-white ">
       <div className="py-34 px-4 mx-auto max-w-screen-xl lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
-          <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#0D9344]">
+          <h1 className="mb-4 text-7xl tracking-tight font-bold lg:text-9xl text-[#0D9344]">
             404
           </h1>
-          <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl ">
+          <p className="mb-4 text-3xl tracking-tight font-semibold text-gray-900 md:text-4xl ">
             Page not found.
           </p>
           <p className="mb-4 text-lg font-light text-gray-500 ">

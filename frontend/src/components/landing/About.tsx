@@ -1,12 +1,53 @@
+"use client";
+
 import Link from "next/link";
 import { Check } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 function About() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+        rootMargin: "0px 0px -50px 0px", // Start animation 50px before element comes into view
+      }
+    );
+
+    const currentSection = sectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
+    }
+
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection);
+      }
+    };
+  }, []);
+
   return (
-    <section className="bg-gradient-to-b bg-white px-4 lg:px-6 py-22">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-b bg-white px-4 lg:px-6 py-22 overflow-x-hidden"
+    >
       <div className=" mx-auto max-w-screen-xl">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
+          <div
+            className={`transition-all duration-800 ease-out ${
+              isVisible
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-full opacity-0"
+            }`}
+          >
             <h2 className="text-4xl font-medium text-black md:text-4xl leading-tight">
               Who We Are
             </h2>
@@ -69,7 +110,13 @@ function About() {
             </div>
           </div>
 
-          <div>
+          <div
+            className={`transition-all duration-800 ease-out ${
+              isVisible
+                ? "translate-x-0 opacity-100"
+                : "translate-x-full opacity-0"
+            }`}
+          >
             <img
               className="w-full h-[570px] object-cover rounded-3xl"
               src="/images/homepage/about.jpg"

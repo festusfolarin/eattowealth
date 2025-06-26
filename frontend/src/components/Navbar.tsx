@@ -55,11 +55,16 @@ function Navbar() {
                 </Link>
               </li>
               <li className="flex gap-4 items-center">
-                <button className="border-2 text-green-600 border-green-600 px-6 py-2 rounded-[5px] hover:bg-amber-600 hover:text-white hover:border-amber-600">
-                  SignUp
+                <button className="border-2 text-green-600 border-green-600 px-6 py-2 rounded-[5px] hover:border-amber-600 relative overflow-hidden group">
+                  <span className="absolute inset-0 bg-amber-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                  <span className="relative z-10 text-green-600 group-hover:text-white transition-colors duration-300">
+                    SignUp
+                  </span>
                 </button>
-                <button className="border-2 border-amber-600 bg-amber-600 text-white rounded-[5px] px-6 py-2 hover:bg-green-600 hover:border-green-600">
-                  LogIn
+
+                <button className="border-2 border-amber-600 bg-amber-600 text-white rounded-[5px] px-6 py-2 hover:border-green-600 relative overflow-hidden group">
+                  <span className="absolute inset-0 bg-green-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                  <span className="relative z-10">LogIn</span>
                 </button>
               </li>
             </ul>

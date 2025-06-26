@@ -28,9 +28,12 @@ function Footer() {
                 className="flex-1 font-light px-4 py-3 rounded-lg border border-white text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white backdrop-blur-sm"
               />
 
-              <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-200 whitespace-nowrap">
+              <Link
+                href={"#"}
+                className="px-6 py-3 bg-black text-white rounded-lg hover:bg-amber-600 transition-colors duration-200 whitespace-nowrap"
+              >
                 Subscribe Now
-              </button>
+              </Link>
             </div>
           </div>
 
