@@ -1,6 +1,6 @@
 import GoogleIcon from "@/components/auth/GoogleIcon";
 import AppleIcon from "@/components/auth/AppleIcon";
-import FacebookIcon from "@/components/auth/FacebookIcon";
+// import FacebookIcon from "@/components/auth/FacebookIcon";
 import { Metadata } from "next";
 import Link from "next/link";
 
