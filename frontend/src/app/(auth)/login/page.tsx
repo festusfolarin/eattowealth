@@ -189,14 +189,14 @@ function LogIn() {
                 By signing in and creating an account, you agree with our{" "}
                 <Link
                   href={"/terms-of-service"}
-                  className="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
+                  className="text-[#12B347] transition-all duration-200 hover:underline"
                 >
                   Terms of Service{" "}
                 </Link>
                 &{" "}
                 <Link
                   href={"/privacy-policy"}
-                  className="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
+                  className="text-[#12B347] transition-all duration-200 hover:underline"
                 >
                   Privacy Policy
                 </Link>
