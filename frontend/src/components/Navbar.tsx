@@ -117,12 +117,18 @@ function Navbar() {
             </Link>
           </li>
           <li className="flex flex-col gap-3 mt-2">
-            <button className="border-2 text-green-600 border-green-600 px-4 py-2 rounded hover:bg-amber-600 hover:text-white hover:border-amber-600">
+            <Link
+              href={"/sign-up"}
+              className="border-2 text-green-600 border-green-600 px-4 py-2 rounded hover:bg-amber-600 hover:text-white hover:border-amber-600"
+            >
               SignUp
-            </button>
-            <button className="border-2 border-amber-600 bg-amber-600 text-white px-4 py-2 rounded hover:bg-green-600">
+            </Link>
+            <Link
+              href={"/login"}
+              className="border-2 border-amber-600 bg-amber-600 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
               LogIn
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

@@ -67,33 +67,35 @@ function About() {
               help you achieve your nutritional goals.
             </p>
             <ul className="py-5 leading-loose md:leading-8">
-              <li className="flex items-center gap-3">
+              {/* Did a temporary mobile width fix for the checkboxes here */}
+              <li className="flex md:items-center gap-3">
                 <Check
                   size={22}
                   color="#ffffff"
                   strokeWidth={3}
-                  className="bg-[#0F993E] p-1 rounded-full"
+                  className="bg-[#0F993E] w-6 sm:w-5.5 p-1 mt-1 sm:mt-0 rounded-full"
                 />
                 <span>Certified nutritionists and health coaches</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex md:items-center gap-3">
                 <Check
                   size={22}
                   color="#ffffff"
                   strokeWidth={3}
-                  className="bg-[#0F993E] p-1 rounded-full"
+                  className="bg-[#0F993E] w-8 sm:w-5.5 p-1 mt-1 sm:mt-0 rounded-full"
                 />
                 <span>
                   Join a supportive network where you can share your journey
                 </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex md:items-center gap-3">
                 <Check
                   size={22}
                   color="#ffffff"
                   strokeWidth={3}
-                  className="bg-[#0F993E] p-1 rounded-full"
+                  className="bg-[#0F993E] w-7 sm:w-5.5  p-1 mt-1 sm:mt-0 rounded-full"
                 />
+
                 <span>
                   Tailored programs designed to fit your unique lifestyle
                 </span>

@@ -46,8 +46,9 @@ function Hero() {
 
             <div className="mt-6 space-y-3 sm:space-y-0 sm:flex sm:items-center sm:space-x-7">
               <Link
-                href={"#"}
-                title=""
+                href="https://wa.me/message/7DXGUOWDEXIEE1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-xl inline-flex items-center justify-center px-10 py-4 text-base font-medium text-white transition-all duration-200 bg-[#0D9344] relative overflow-hidden group"
               >
                 <span className="absolute inset-0 bg-amber-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
@@ -55,7 +56,7 @@ function Hero() {
               </Link>
 
               <Link
-                href={"#"}
+                href={"#services"}
                 className="rounded-xl inline-flex items-center justify-center px-10 py-3.5 text-base font-medium text-black transition-all duration-200 border-2 border-black hover:text-white hover:border-amber-600 relative overflow-hidden group"
               >
                 <span className="absolute inset-0 bg-amber-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
