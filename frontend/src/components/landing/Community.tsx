@@ -38,7 +38,7 @@ function Community() {
           <div>
             <img
               className="w-full object-cover rounded-3xl"
-              src="/images/homepage/ourcommunity.png"
+              src="/images/homepage/ourcommunity.jpg"
               alt=""
             />
           </div>

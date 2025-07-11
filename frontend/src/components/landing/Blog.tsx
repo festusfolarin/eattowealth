@@ -26,7 +26,7 @@ function Blog() {
               <Link href={"#"}>
                 <img
                   className="object-cover w-full  h-[212px]"
-                  src="images/homepage/card1.png"
+                  src="images/homepage/card1.jpg"
                   alt=""
                 />
               </Link>
@@ -61,7 +61,7 @@ function Blog() {
               <Link href={"#"}>
                 <img
                   className="object-cover w-full h-[212px]"
-                  src="images/homepage/card2.png"
+                  src="images/homepage/card2.jpg"
                   alt=""
                 />
               </Link>
@@ -96,7 +96,7 @@ function Blog() {
               <Link href={"#"}>
                 <img
                   className="object-cover w-full h-[212px]"
-                  src="images/homepage/card3.png"
+                  src="images/homepage/card3.jpg"
                   alt=""
                 />
               </Link>

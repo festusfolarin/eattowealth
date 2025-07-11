@@ -48,13 +48,13 @@ const Services = () => {
     },
     {
       title: "Health Analytics",
-      image: "images/homepage/image3.png",
+      image: "images/homepage/image3.jpg",
       gradient: "from-yellow-500 via-transparent to-transparent",
       url: "#",
     },
     {
       title: "Child Nutrition",
-      image: "images/homepage/image4.png",
+      image: "images/homepage/image4.jpg",
       gradient: "from-green-500 via-transparent to-transparent",
       url: "#",
     },

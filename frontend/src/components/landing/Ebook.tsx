@@ -50,7 +50,7 @@ function Ebook() {
           >
             <img
               className="md:w-[568px] md:h-[518px] object-cover rounded-3xl"
-              src="/images/homepage/ebook2.png"
+              src="/images/homepage/ebook2.jpg"
               alt=""
             />
           </div>

@@ -18,11 +18,11 @@ function LogIn() {
             <div className="absolute inset-0">
               <img
                 className="object-cover w-full h-full"
-                src="/images/signup/login.png"
+                src="/images/signup/login.jpg"
                 alt=""
               />
             </div>
-            <div className="absolute inset-0  bg-gradient-to-t from-[#0D9344] via-transparent to-transparent"></div>
+            <div className="absolute inset-0  bg-gradient-to-t from-[#0D9344] md:via-transparent to-transparent"></div>
 
             <div className="relative">
               <div className="w-full max-w-xl xl:w-full xl:mx-auto">
@@ -83,7 +83,7 @@ function LogIn() {
                       <input
                         type="email"
                         placeholder="Enter your email"
-                        className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                        className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-[#12B347] focus:bg-white caret-[#12B347]"
                       />
                     </div>
                   </div>
@@ -113,7 +113,7 @@ function LogIn() {
                       <input
                         type="password"
                         placeholder="Enter your password"
-                        className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                        className="block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-[#12B347] focus:bg-white caret-[#12B347]"
                       />
                     </div>
                   </div>
@@ -122,7 +122,7 @@ function LogIn() {
                     <label className="inline-flex items-center">
                       <input
                         type="checkbox"
-                        className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                        className="w-4 h-4 text-[#12B347] border-gray-300 rounded focus:ring-[#12B347]"
                       />
                       <span className="ml-2 text-sm text-gray-600">
                         Remember me

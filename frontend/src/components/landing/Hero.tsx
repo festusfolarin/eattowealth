@@ -83,7 +83,7 @@ function Hero() {
                 />
                 <img
                   className="inline-block rounded-full w-10 h-10  object-cover"
-                  src="images/homepage/trustee3.png"
+                  src="images/homepage/trustee3.jpg"
                   alt=""
                 />
               </div>
