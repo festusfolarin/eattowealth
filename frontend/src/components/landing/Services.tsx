@@ -74,7 +74,7 @@ const Services = () => {
 
   return (
     <section ref={sectionRef} className="bg-[#F5F5F5] overflow-y-hidden">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-0 py-18 ">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-0 pt-12 pb-18">
         <div className="text-center">
           <h3 className="text-2xl mb-2 text-center font-semibold leading-tight text-[#0D9344] sm:text-4xl">
             Our Services

@@ -17,13 +17,13 @@ function Navbar() {
             </Link>
 
             <div
-              className="md:hidden text-2xl cursor-pointer"
+              className="lg:hidden text-2xl cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <FiX /> : <FiMenu />}
             </div>
 
-            <ul className=" hidden md:flex items-center tracking-wide text-sm gap-[39px] font text-green-600">
+            <ul className=" hidden lg:flex items-center tracking-wide text-sm gap-[39px] font text-green-600">
               <li>
                 <Link className="hover:text-amber-600" href={"/"}>
                   Home
@@ -55,17 +55,23 @@ function Navbar() {
                 </Link>
               </li>
               <li className="flex gap-4 items-center">
-                <button className="border-2 text-green-600 border-green-600 px-6 py-2 rounded-[5px] hover:border-amber-600 relative overflow-hidden group">
+                <Link
+                  href={"/sign-up"}
+                  className="border-2 text-green-600 border-green-600 px-6 py-2 rounded-[5px] hover:border-amber-600 relative overflow-hidden group"
+                >
                   <span className="absolute inset-0 bg-amber-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                   <span className="relative z-10 text-green-600 group-hover:text-white transition-colors duration-300">
                     SignUp
                   </span>
-                </button>
+                </Link>
 
-                <button className="border-2 border-amber-600 bg-amber-600 text-white rounded-[5px] px-6 py-2 hover:border-green-600 relative overflow-hidden group">
-                  <span className="absolute inset-0 bg-green-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                <Link
+                  href={"/login"}
+                  className="border-2 border-amber-600 bg-amber-600 text-white rounded-[5px] px-6 py-2 hover:border-green-600 relative overflow-hidden group"
+                >
+                  <span className="absolute inset-0 bg-green-600 transform -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                   <span className="relative z-10">LogIn</span>
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -75,7 +81,7 @@ function Navbar() {
       {/* MOBILE MENU */}
 
       <div
-        className={`fixed top-16 z-30 left-0 w-full bg-white shadow-md md:hidden px-6 py-4 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-16 z-30 left-0 w-full bg-white shadow-md lg:hidden px-6 py-4 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-y-0" : "-translate-y-200"
         }`}
       >
@@ -125,7 +131,7 @@ function Navbar() {
 
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-25 z-20 md:hidden"
+          className="fixed inset-0 bg-black opacity-25 z-20 lg:hidden"
           onClick={() => setMenuOpen(false)}
         />
       )}

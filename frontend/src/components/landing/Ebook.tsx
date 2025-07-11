@@ -36,7 +36,7 @@ function Ebook() {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b bg-[#F6FAFA] px-4 lg:px-6 py-22 overflow-x-hidden"
+      className="bg-gradient-to-b relative z-10 bg-[#F6FAFA] px-4 lg:px-6 py-22 overflow-x-hidden"
     >
       <div className=" mx-auto max-w-screen-xl">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
@@ -49,7 +49,7 @@ function Ebook() {
             }`}
           >
             <img
-              className="w-[568px] h-[518px] object-cover rounded-3xl"
+              className="md:w-[568px] md:h-[518px] object-cover rounded-3xl"
               src="/images/homepage/ebook2.png"
               alt=""
             />

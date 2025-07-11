@@ -7,7 +7,7 @@ function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Trigger animation after component mounts
+    // Small delay to ensure component is mounted
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
@@ -16,7 +16,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative pt-16 md:py-0 px-4 lg:px-6 md:-z-30 md:-my-64 overflow-x-hidden">
+    <section className="relative pt-16 z-10 md:py-20 lg:py-0 px-4 lg:px-6 lg:-my-34 xl:-my-64 overflow-x-hidden">
       {/* Green gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#e4fdcd] to-[#e6fef5]"></div>
 
@@ -30,9 +30,13 @@ function Hero() {
                 : "-translate-x-full opacity-0"
             }`}
           >
-            <h1 className="text-4xl font-bold text-black md:text-5xl leading-tight tracking-wide">
+            <h1 className="text-4xl hidden sm:block font-bold text-black md:text-5xl leading-tight tracking-wide">
               Your Path to a <span className="text-[#0D9344]">Healthier</span>{" "}
               Lifestyle Starts Here
+            </h1>
+            <h1 className="text-4xl sm:hidden font-bold text-black md:text-5xl leading-tight tracking-wide">
+              Your Path to a{" "}
+              <span className="text-[#0D9344]">Healthier You</span> Starts Here
             </h1>
 
             <p className="mt-4 lg:w-xl text-base text-black sm:text-xl leading-normal">
@@ -62,28 +66,28 @@ function Hero() {
             <div className="mt-8 lg:mt-12 flex gap-3 items-center">
               <div className="flex flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
                 <img
-                  className="inline-block rounded-full w-14 h-14 object-cover"
+                  className="inline-block rounded-full w-10 h-10  object-cover"
                   src="images/homepage/reviewer.jpg"
                   alt=""
                 />
                 <img
-                  className="inline-block rounded-full w-14 h-14 object-cover"
+                  className="inline-block rounded-full w-10 h-10  object-cover"
                   src="images/homepage/trustee1.jpg"
                   alt=""
                 />
                 <img
-                  className="inline-block rounded-full w-14 h-14 object-cover"
+                  className="inline-block rounded-full w-10 h-10  object-cover"
                   src="images/homepage/trustee2.jpg"
                   alt=""
                 />
                 <img
-                  className="inline-block rounded-full w-14 h-14 object-cover"
+                  className="inline-block rounded-full w-10 h-10  object-cover"
                   src="images/homepage/trustee3.png"
                   alt=""
                 />
               </div>
 
-              <p className="mt-4 font-bold text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">
+              <p className=" text-sm font-semibold md:text-md text-black lg:mt-0 lg:ml-2 font-pj">
                 Trusted by 5000+
               </p>
             </div>

@@ -3,7 +3,7 @@ import { MoveRight } from "lucide-react";
 
 function Community() {
   return (
-    <section className="bg-gradient-to-b bg-white px-4 lg:px-6 py-22">
+    <section className="bg-gradient-to-b bg-white px-4 lg:px-6 py-16">
       <div className=" mx-auto max-w-screen-xl">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>

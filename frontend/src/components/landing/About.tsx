@@ -37,7 +37,7 @@ function About() {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b bg-white px-4 lg:px-6 py-22 overflow-x-hidden"
+      className="bg-gradient-to-b bg-white px-4 lg:px-6 py-16 overflow-x-hidden"
     >
       <div className=" mx-auto max-w-screen-xl">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
@@ -118,7 +118,7 @@ function About() {
             }`}
           >
             <img
-              className="w-full h-[570px] object-cover rounded-3xl"
+              className="w-full md:h-[570px] object-cover rounded-3xl"
               src="/images/homepage/about.jpg"
               alt=""
             />
